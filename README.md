@@ -5,7 +5,7 @@ This project was created to demonstrate advanced front-end architecture, state s
 ## Live Demo
 
 Play the project here:  
-**[Your GitHub Live Link Here]**
+**https://ian-swartz.github.io/Simple-Tactical-RPG/**
 
 ---
 
