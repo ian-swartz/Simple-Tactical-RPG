@@ -87,7 +87,24 @@ This project was built to showcase practical software development and architectu
 
 ## Project Structure
 ```
-
+├── .github
+│   └── workflows
+│       └── deploy.yml
+├── images
+│   └── screenshots
+│       ├── .gitkeep
+│       ├── battle-grid.png
+│       ├── exploration-mode.png
+│       └── splatter-shot.png
+├── src
+│   ├── App.jsx
+│   ├── BattleGrid.jsx
+│   ├── index.jsx
+│   └── styles.css
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.js
 ```
 
 ---
@@ -100,4 +117,6 @@ GitHub: https://github.com/ian-swartz
 ---
 
 Project Created for Millersville CMSC 498 - Independent Study (Web/Game Development)
+Original CodeSandbox Link: ** https://codesandbox.io/p/sandbox/dreamy-platform-qgn8t2 **
+(CodeSandbox doesn't always load all the images, which I believe may be a server issue).
 
