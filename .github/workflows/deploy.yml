@@ -16,9 +16,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    env:
-      # Allocates 4GB of RAM to the bundler process to prevent silent exit crashes
-      NODE_OPTIONS: "--max-old-space-size=4096"
   
     steps:
       - name: Checkout code
@@ -27,21 +24,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
-        # Force a clean, optimized cloud installation
-        run: npm ci || npm install --legacy-peer-deps
+        run: npm install
 
       - name: Build React application
         run: npm run build
-        env:
-          CI: false
 
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: ./dist # Vite outputs to 'dist', not 'build'
 
       - name: Deploy to GitHub Pages
         id: deployment
