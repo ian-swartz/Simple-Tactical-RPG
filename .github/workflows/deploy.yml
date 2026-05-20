@@ -16,6 +16,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      # Allocates 4GB of RAM to the bundler process to prevent silent exit crashes
+      NODE_OPTIONS: "--max-old-space-size=4096"
   
     steps:
       - name: Checkout code
@@ -24,10 +27,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18  # Lowered to Node 18 to perfectly match react-scripts v5 compatibility
+          node-version: 18
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        # Force a clean, optimized cloud installation
+        run: npm ci || npm install --legacy-peer-deps
 
       - name: Build React application
         run: npm run build
