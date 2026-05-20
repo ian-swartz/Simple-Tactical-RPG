@@ -118,7 +118,7 @@ GitHub: https://github.com/ian-swartz
 
 Project Created for Millersville CMSC 498 - Independent Study (Web/Game Development)
 
-Original CodeSandbox Link: **https://codesandbox.io/p/sandbox/dreamy-platform-qgn8t2**
+Original CodeSandbox Share Link: **https://codesandbox.io/p/sandbox/dreamy-platform-qgn8t2**
 
 CodeSandbox Website Link: **https://qgn8t2.csb.app/**
 
