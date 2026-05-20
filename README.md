@@ -1,6 +1,6 @@
 # Simple-Tactical-RPG
-A browser-based, turn-based tactical RPG featuring an isometric exploration mode and a multi-action grid combat system built with **React and CSS**.  
-This project was created to demonstrate advanced front-end architecture, state synchronization, isometric rendering mathematics, and complex game-loop logic within a component-based framework. (Mostly Vibe Coded)
+A browser-based, turn-based tactical RPG featuring an isometric exploration mode and a multi-action grid combat system built with **React, Vite, and CSS**.  
+This project was created to demonstrate advanced front-end architecture, state synchronization, isometric rendering mathematics, and complex game-loop logic within a modern, optimized component-based framework. (Mostly Vibe Coded)
 
 ## Live Demo
 
@@ -31,7 +31,7 @@ This Simple Tactical RPG is a full-featured web application that seamlessly brid
 - **Complex Turn-State Management:** Orchestrating a rigid turn timeline between a player and multiple active computer AI units.
 - **Polished UI & Gameplay Feedback:** Incorporating structural layout boundaries, absolute world positioning, action counters, and hover preview indicators.
 
-This repository serves as a portfolio piece showcasing React state mastery, performance optimization with dynamic components, and defensive programming workflows for software engineering roles.
+This repository serves as a portfolio piece showcasing React state mastery, performance optimization with dynamic components, and a lightning-fast build pipeline powered by Vite.
 
 ---
 
@@ -67,7 +67,8 @@ An advanced area-of-effect (AOE) tracking matrix that recalculates splash fields
 
 ## Tech Stack
 
-- **React.js** (Functional Components & Hooks)
+- **React.js** (Functional Components, JSX, & Hooks)
+- **Vite** (Next-Generation Frontend Tooling & Production Bundling)
 - **CSS3** (Transform-3D Profiles, Flexbox, & Grid Layouts)
 - **JavaScript** (State Mapping & Matrix Array Algorithms)
 
@@ -80,13 +81,13 @@ This project was built to showcase practical software development and architectu
 - **Advanced State Synchronizations:** Orchestrating parent-to-child component shifts while strictly preserving base statistics.
 - **Isometric CSS Calculations:** Utilizing advanced `transform-style: preserve-3d` and geometric rotations to build spatial layout fields without external heavy graphics engines.
 - **Robust AI Algorithms:** Designing basic reactive enemy logic loops managing proximity calculation, obstacle handling, and offensive combat execution.
-- **Defensive UI Rendering:** Ensuring responsive scaling, precise overflow management, and intuitive interaction overlays under varied gameplay conditions.
+- **Optimized Production Bundling:** Transitioning legacy architectures to a high-performance compilation framework (Vite) utilizing native ESM-based module loading.
 
 ---
 
 ## Project Structure
 ```
-Insert project structure here.
+
 ```
 
 ---
