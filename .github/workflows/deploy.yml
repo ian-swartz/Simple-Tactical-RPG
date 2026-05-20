@@ -16,8 +16,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   
     steps:
       - name: Checkout code
@@ -26,7 +24,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 18  # Lowered to Node 18 to perfectly match react-scripts v5 compatibility
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
@@ -35,7 +33,6 @@ jobs:
         run: npm run build
         env:
           CI: false
-          TSC_COMPILE_ON_ERROR: true
 
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
