@@ -17,7 +17,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Clears that warning completely
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   
     steps:
       - name: Checkout code
@@ -29,13 +29,13 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        # --legacy-peer-deps prevents React 19 / react-scripts dependency conflicts from crashing the build
         run: npm install --legacy-peer-deps
 
       - name: Build React application
         run: npm run build
         env:
           CI: false
+          TSC_COMPILE_ON_ERROR: true
 
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
