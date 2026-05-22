@@ -112,6 +112,7 @@ This project was built to showcase practical software development and architectu
 ## Author
 
 Developed by: Ian Swartz 
+
 GitHub: https://github.com/ian-swartz
 
 ---
