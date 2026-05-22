@@ -102,6 +102,7 @@ This project was built to showcase practical software development and architectu
 │   ├── index.jsx
 │   └── styles.css
 ├── index.html
+├── LICENSE
 ├── package.json
 ├── README.md
 └── vite.config.js
